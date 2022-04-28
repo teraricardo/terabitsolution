@@ -1,0 +1,379 @@
+/* Diseno para todas las pantallas*/
+#cuerpo {
+  margin: 0%;
+}
+#Check{
+  display: none;
+}
+#Check:checked ~ * .Main{
+  display: block;
+ }
+#Check:checked ~ .CheckBtn{
+  color: #000000;
+ }
+.header{
+  top: 3rem;
+  z-index: 9;
+  position: sticky; 
+  float: right;
+  margin: 0 0;
+  background: #0dbd56;
+}
+.CheckBtn{
+  top: .5rem;
+  margin-bottom: 0;
+  color: #a51b0b;
+  z-index: 10;
+  position: sticky; 
+  float: right;
+}
+.CheckBtn:hover{
+  color: #000000;
+}
+.fa-solid{
+margin-right: 1em;
+position: sticky; 
+  }
+.fa-solid:hover{
+  color:#000000;
+}
+.navigation{
+  float: right;
+}
+.Main {
+  transition: all 400ms;
+  opacity: 90%;
+  right: 0.01rem;
+  top: 3rem;
+  z-index: 9;
+  position: fixed;
+  background: #d10101;
+  border: 0rem;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 60px;
+  display: none;
+  color: #ffffff;
+  text-decoration: none;
+  list-style: none;
+}
+.Main li{
+  margin: 50px 0;
+}
+.Main a{
+  color: #ffffff;
+}
+.BodyB{
+  position: relative;
+}
+.One{
+  background-image: url(../Imagenes/banner1.jpg) ;
+  background-blend-mode:soft-light;
+}
+.Two{
+  background-image: url(../Imagenes/banner2.jpg) ;
+}
+.Banner {
+  display: block;
+  position: relative;
+  margin: 0;
+  height: 450px;
+  border: 0.01rem #363636 solid;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-color: #363636;
+}
+.TituloSection{
+  font-family: Arial, Helvetica, sans-serif, "Times New Roman", Times, serif;
+  text-align: center;
+  font-size: 40px;
+}
+.P {
+  font-family: Arial, Helvetica, sans-serif, "Times New Roman", Times, serif;
+  font-size: 18px;
+  text-align:justify;
+  margin: 10%;
+  bottom: 3rem;
+}
+.Option{
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif, "Times New Roman", Times, serif;
+  font-size: 18px;
+  margin-right: 1em;
+  float: right;
+  z-index: 9;
+}
+.Nicho h4 {
+ font-family: Arial, Helvetica, sans-serif, "Times New Roman", Times, serif;
+ font-size: 25px;
+ text-align: center;
+ width: 100%;
+}
+div img{
+  display:block;
+  margin: auto;
+  max-width: 120px;
+  max-height: 120px;
+  width: 100%;
+ }
+ .png{
+  max-width: 300px;
+  max-height: 300px;
+}
+.Contactanos{
+  font-family: Arial, Helvetica, sans-serif, "Times New Roman", Times, serif;
+  background-color: #E4E4E1;
+  background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%), linear-gradient(to top, rgba(255,255,255,0.1) 0%, rgba(143,152,157,0.60) 100%);
+  align-items: center;
+  height: 690px;
+   
+}
+.form_input{
+  font: inherit;
+  font-size: 1rem;
+  padding: .7em 1em;
+  border-radius: 0.2em;
+}
+.formDiv{
+margin: 1em;
+background-color: rgba(255, 255, 255, 0.6); 
+color: rgba(255, 255, 255, 0.6);
+width: 80%;
+max-width: 390px;
+height: 15em;
+border-radius: 1em;
+padding: 3.5em 1.5em;
+}
+.input-message{
+resize: none;
+padding: 1.8em 1em;
+}
+.FormContainer{
+align-items: center;
+width:100%;
+display: grid;
+gap: 1em;
+grid-auto-columns: 100%;
+}
+.Contaction{
+font-family: Arial, Helvetica, sans-serif, "Times New Roman", Times, serif;
+text-align: center;
+font-size: 40px;
+}
+.Info{
+text-align: center;
+}
+.form_submit{
+font-family: inherit;
+font-size: 1rem;
+background-color: #a51b0b;
+color: #fff;
+border: none;
+font-weight: 300;
+padding: .5em 0;
+border-radius: .2em;
+cursor: pointer;
+}
+.margin_Botton{
+  padding: 20px;
+}
+/* ingresa para responsive a pantallas de un tamano mayor a 980px o mas grandes*/
+@media only screen and (min-width: 870px) {
+  .CheckBtn{
+    margin-right: .5em;
+    font-size: 30px;
+    display: block;
+  }
+  .headerbanner {
+    background-image: url(../Imagenes/Banner_Header.png);
+    background-size: cover;
+    width: 100%;
+    height: 9rem;
+  } 
+.Titulo {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif, "Times New Roman", Times, serif;
+  border-radius: 6px;
+  color: white;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 4rem;
+  background-position: center;
+  font-size: 2rem;
+}
+  .SubTitulo{
+    display: block;
+    font-family: Arial, Helvetica, sans-serif, "Times New Roman", Times, serif;
+    border-radius: 6px;
+    color: white;
+    font-size: 1.5rem;
+    background-position: center;
+    text-align: center;
+  }
+    .Parrafo{
+      display: block;
+      font-family: Arial, Helvetica, sans-serif, "Times New Roman", Times, serif;
+      border-radius: 6px;
+      color: white;
+      text-align: center;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      font-size: .8rem;
+    } 
+ .Nicho{
+  margin-top: 70px;
+  margin-bottom: 70px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  }
+  .ServColor{
+    background-color: rgb(228, 224, 224);
+   }
+   .Clientes{
+    display:flex;
+    background-size: cover;
+    justify-content: space-between; 
+    align-items: center;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  .Contactanos{
+    font-family: Arial, Helvetica, sans-serif, "Times New Roman", Times, serif;
+    background-color: #E4E4E1;
+   background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%), linear-gradient(to top, rgba(255,255,255,0.1) 0%, rgba(143,152,157,0.60) 100%);
+     background-blend-mode: normal, multiply;
+     display:flex;
+     background-size: cover;
+     justify-content: space-between; 
+     align-items: center;
+     height: 410px;
+     width: 100%;
+     position:absolute;
+  }
+}
+/* ingresa para responsive a pantallas de un tamano no mayor de 869px */
+@media only screen and (max-width: 869px) {
+  .CheckBtn{
+    margin-right: 1em;
+    font-size: 20px;
+    display: block;
+  }
+
+  .headerbanner {
+    background-image: url(../Imagenes/Banner_mobile-01.png);
+    background-size: cover;
+    width: 100%;
+    height: 9rem;
+  }
+.Titulo {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif, "Times New Roman", Times, serif;
+  border-radius: 4px;
+  color: white;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 2rem;
+  background-position: center;
+  font-size: 1.5rem;
+}
+  .SubTitulo{
+    display: block;
+    font-family: Arial, Helvetica, sans-serif, "Times New Roman", Times, serif;
+    border-radius: 2px;
+    color: white;
+    font-size: 1.5rem;
+    background-position: center;
+    text-align: center;
+  }
+    .Parrafo{
+      display: block;
+      font-family: Arial, Helvetica, sans-serif, "Times New Roman", Times, serif;
+      border-radius: 2px;
+      color: white;
+      text-align: center;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      font-size: .8rem;
+    } 
+  .Nicho{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    }
+.Card{
+      background-color: rgb(228, 224, 224);
+     }
+.formDiv{
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  }
+}
+/* ingresa para responsive a pantallas de un tamano no  mayor de 435px*/
+@media only screen and (max-width: 435px) {
+  .CheckBtn{
+    margin-right: 1em;
+    font-size: 20px;
+    display: block;
+  }
+
+  .headerbanner {
+    background-image: url(../Imagenes/Banner_mobile-01.png);
+    background-size: cover;
+    width: 100%;
+    height: 9rem;
+  }
+.Titulo {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif, "Times New Roman", Times, serif;
+  border-radius: 4px;
+  color: white;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 2rem;
+  background-position: center;
+  font-size: 1.5rem;
+}
+  .SubTitulo{
+    display: block;
+    font-family: Arial, Helvetica, sans-serif, "Times New Roman", Times, serif;
+    border-radius: 2px;
+    color: white;
+    font-size: 1.5rem;
+    background-position: center;
+    text-align: center;
+  }
+    .Parrafo{
+      display: block;
+      font-family: Arial, Helvetica, sans-serif, "Times New Roman", Times, serif;
+      border-radius: 2px;
+      color: white;
+      text-align: center;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      font-size: 1.2rem;
+    } 
+.Nicho{
+  margin-top: 70px;
+  margin-bottom: 70px;
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  gap: 20px;
+}
+.Pits{
+  background-color: rgb(228, 224, 224);
+ }
+.ServColor{
+  background-color: white ;
+}
+.formDiv{
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+}
